@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Tri-Mix Stick
+Comment=NITROX TOOL
+Exec=/home/pi/Gas-Blending/TRI-MIX.STICK.py
+Icon=/home/user/youricon.gif
+Terminal=false
+Type=Application

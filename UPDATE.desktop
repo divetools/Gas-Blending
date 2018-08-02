@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Update
+Comment=Update TOOL
+Exec=/home/pi/Gas-Blending/UPDATE.sh
+Icon=/home/user/youricon.gif
+Terminal=false
+Type=Application

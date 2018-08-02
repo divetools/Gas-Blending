@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=NITROX
+Comment=NITROX TOOL
+Exec=/home/pi/Gas-Blending/NITROX.py
+Icon=/home/user/youricon.gif
+Terminal=false
+Type=Application
