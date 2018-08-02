@@ -21,7 +21,7 @@ class App:
 		self.master = master
 		frame = Frame(master)
 		frame.pack()
-		label = Label(frame, text='NITROX ANALYZER', font=("Helvetica", 32))
+		label = Label(frame, text='TRI-MIX Stick', font=("Helvetica", 32))
 		label.grid(row=0)
 
 		self.S0_reading_label = Label(frame, text='12.34', font=("Helvetica", 64))
@@ -30,7 +30,7 @@ class App:
 		self.S0_mod_label = Label(frame, text='123', font=("Helvetica", 64))
 		self.S0_mod_label.grid(row=2)
 		
-		label = Label(frame, text="Tucker D. Palmatier", font=("Helvetica", 32))
+		label = Label(frame, text="TRI-MIX STICK", font=("Helvetica", 32))
 		label.grid(row=3)
 		self.update_S0_reading()
 		self.update_S0_mod()
