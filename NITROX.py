@@ -30,7 +30,7 @@ class App:
 		self.S0_mod_label = Label(frame, text='123', font=("Helvetica", 64))
 		self.S0_mod_label.grid(row=2)
 		
-		label = Label(frame, text="Tucker D. Palmatier", font=("Helvetica", 32))
+		label = Label(frame, text="Dive Tools Nixtrox", font=("Helvetica", 32))
 		label.grid(row=3)
 		self.update_S0_reading()
 		self.update_S0_mod()
