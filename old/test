@@ -1,0 +1,10 @@
+#!/usr/bin/python
+
+import Adafruit_ADS1x15, time, os
+
+adc = Adafruit_ADS1x15.ADS1115()
+
+while True:
+   O2 = adc.read_adc(0, gain=16)
+   print O2
+   time.sleep(0.5)
