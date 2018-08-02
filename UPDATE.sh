@@ -1,1 +1,2 @@
 # Update tool
+git pull
