@@ -23,51 +23,57 @@ class App:
 		frame = Frame(master)
 		frame.pack()
 		label = Label(frame, text='TRI-MIX Stick', font=("Helvetica", 32))
-		label.grid(row=0)
+		label.grid(row=0, columnspan=2)
 
-		self.S0_reading_label = Label(frame, text='12.34', font=("Helvetica", 64))
-		self.S0_reading_label.grid(row=1,column=0)
+                label = Label(frame, text='', font=("Helvetica", 32))
+                label.grid(row=1, columnspan=2)
 
-		self.S0_mod_label = Label(frame, text='123', font=("Helvetica", 64))
-		self.S0_mod_label.grid(row=2)
+		self.S0_reading_label = Label(frame, text='12.34', font=("Helvetica", 20))
+		self.S0_reading_label.grid(row=2,column=0, sticky=W)
 
-                self.S1_reading_label = Label(frame, text='12.34', font=("Helvetica", 64))
-                self.S1_reading_label.grid(row=1,column=1)
+                self.S1_reading_label = Label(frame, text='12.34', font=("Helvetica", 20))
+                self.S1_reading_label.grid(row=2,column=1, sticky=E)
 
-                self.S1_mod_label = Label(frame, text='123', font=("Helvetica", 64))
-                self.S1_mod_label.grid(row=4)
+                label = Label(frame, text='', font=("Helvetica", 32))
+                label.grid(row=3, columnspan=2)
+
+		self.mix_c1_label = Label(frame, text='123', font=("Helvetica", 45))
+		self.mix_c1_label.grid(row=4, column=0, sticky=E)
+
+                self.mix_c2_label = Label(frame, text='123', font=("Helvetica", 45))
+                self.mix_c2_label.grid(row=4, column=1, sticky=W)
 		
-		label = Label(frame, text="TRI-MIX STICK", font=("Helvetica", 32))
-		label.grid(row=5)
-
 		self.update_S0_reading()
-		self.update_S0_mod()
-                self.update_S1_reading()
-                self.update_S1_mod()
+		self.update_S1_reading()
+		self.update_mix_c1()
+                self.update_mix_c2()
 
 	def update_S0_reading(self):
 		O2_S0 = get_O2_S0()
-		reading_str = "{:.2f}% O2".format(O2_S0)
+		reading_str = "S1: {:.2f}% O2".format(O2_S0)
 		self.S0_reading_label.configure(text=reading_str)
 		self.master.after(500, self.update_S0_reading)
 
-	def update_S0_mod(self):
-		MOD_S0 = round(((1.4 / (get_O2_S0() * .01)) - 1) * 33)
-		mod_str = "MOD = {}".format(MOD_S0)
-		self.S0_mod_label.configure(text=mod_str)
-		self.master.after(500, self.update_S0_mod)
-
         def update_S1_reading(self):
                 O2_S1 = get_O2_S1()
-                reading_str = "{:.2f}% O2".format(O2_S1)
+                reading_str = "S2: {:.2f}% O2".format(O2_S1)
                 self.S1_reading_label.configure(text=reading_str)
                 self.master.after(500, self.update_S1_reading)
 
-        def update_S1_mod(self):
-                MOD_S1 = round(((1.4 / (get_O2_S1() * .01)) - 1) * 33)
-                mod_str = "MOD = {}".format(MOD_S1)
-                self.S1_mod_label.configure(text=mod_str)
-                self.master.after(500, self.update_S1_mod)
+	def update_mix_c1(self):
+		MIX_C1 = get_O2_S1()
+		mix_c1_str = "{}% O2 /".format(MIX_C1)
+		self.mix_c1_label.configure(text=mix_c1_str)
+		self.master.after(500, self.update_mix_c1)
+
+        def update_mix_c2(self):
+		O2_S0 = get_O2_S0()
+		O2_S1 = get_O2_S1()
+                MIX_CALC = (100-O2_S1)/(100-O2_S0)+O2_S0*(O2_S1-100)/(20.8*(100-O2_S0))
+		MIX_C2 = round(MIX_CALC*100) 
+                mix_c2_str = " {}% He".format(MIX_C2)
+                self.mix_c2_label.configure(text=mix_c2_str)
+                self.master.after(500, self.update_mix_c2)
 
 
 root = Tk()
