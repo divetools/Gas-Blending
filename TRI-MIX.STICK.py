@@ -30,6 +30,12 @@ class App:
 
 		self.S0_mod_label = Label(frame, text='123', font=("Helvetica", 64))
 		self.S0_mod_label.grid(row=2)
+
+                self.S1_reading_label = Label(frame, text='12.34', font=("Helvetica", 64))
+                self.S1_reading_label.grid(row=1)
+
+                self.S1_mod_label = Label(frame, text='123', font=("Helvetica", 64))
+                self.S1_mod_label.grid(row=2)
 		
 		label = Label(frame, text="TRI-MIX STICK", font=("Helvetica", 32))
 		label.grid(row=3)
