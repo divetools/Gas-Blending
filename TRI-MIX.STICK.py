@@ -26,13 +26,13 @@ class App:
 		label.grid(row=0)
 
 		self.S0_reading_label = Label(frame, text='12.34', font=("Helvetica", 64))
-		self.S0_reading_label.grid(row=1)
+		self.S0_reading_label.grid(row=1,column=0)
 
 		self.S0_mod_label = Label(frame, text='123', font=("Helvetica", 64))
 		self.S0_mod_label.grid(row=2)
 
                 self.S1_reading_label = Label(frame, text='12.34', font=("Helvetica", 64))
-                self.S1_reading_label.grid(row=3)
+                self.S1_reading_label.grid(row=1,column=1)
 
                 self.S1_mod_label = Label(frame, text='123', font=("Helvetica", 64))
                 self.S1_mod_label.grid(row=4)
