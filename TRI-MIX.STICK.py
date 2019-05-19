@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# -*- coding: utf-8 -*-
 
 from Tkinter import *
 import Adafruit_ADS1x15
