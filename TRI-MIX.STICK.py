@@ -51,19 +51,19 @@ class App:
 
 	def update_S0_reading(self):
 		O2_S0 = get_O2_S0()
-		reading_str = "S1: {:.2f}% O2".format(O2_S0)
+		reading_str = "S1: {:.2f}% O²".format(O2_S0)
 		self.S0_reading_label.configure(text=reading_str)
 		self.master.after(500, self.update_S0_reading)
 
         def update_S1_reading(self):
                 O2_S1 = get_O2_S1()
-                reading_str = "S2: {:.2f}% O2".format(O2_S1)
+                reading_str = "S2: {:.2f}% O²".format(O2_S1)
                 self.S1_reading_label.configure(text=reading_str)
                 self.master.after(500, self.update_S1_reading)
 
 	def update_mix_c1(self):
 		MIX_C1 = get_O2_S1()
-		mix_c1_str = "{}% O2 /".format(MIX_C1)
+		mix_c1_str = "{}% O² /".format(MIX_C1)
 		self.mix_c1_label.configure(text=mix_c1_str)
 		self.master.after(500, self.update_mix_c1)
 
