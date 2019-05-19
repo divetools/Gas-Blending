@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# -*- coding: utf-8 -*-
 
 from Tkinter import *
 import Adafruit_ADS1x15
@@ -32,7 +33,7 @@ class App:
 
 	def update_S0_reading(self):
 		O2_S0 = get_O2_S0()
-		reading_str = "{:.2f}% O2".format(O2_S0)
+		reading_str = "{:.2f}% O²".format(O2_S0)
 		self.S0_reading_label.configure(text=reading_str)
 		self.master.after(500, self.update_S0_reading)
 
