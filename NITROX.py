@@ -5,15 +5,10 @@ import Adafruit_ADS1x15
 import time
 adc = Adafruit_ADS1x15.ADS1115()
 FAC_S0 = (adc.read_adc(0, gain=16) + adc.read_adc(0, gain=16) + adc.read_adc(0, gain=16) + adc.read_adc(0, gain=16) + adc.read_adc(0, gain=16)) / 5 / 20.9
-FAC_S1 = (adc.read_adc(1, gain=16) + adc.read_adc(1, gain=16) + adc.read_adc(1, gain=16) + adc.read_adc(1, gain=16) + adc.read_adc(1, gain=16)) / 5 / 20.9
 
 def get_O2_S0():
 	O2_S0 = round((adc.read_adc(0, gain=16) + adc.read_adc(0, gain=16) + adc.read_adc(0, gain=16) + adc.read_adc(0, gain=16) + adc.read_adc(0, gain=16)) / 5 / FAC_S0,1)
 	return (O2_S0)
-
-def get_O2_S1():
-        O2_S1 = round(adc.read_adc(1, gain=16) / FAC_S1,1)
-        return (O2_S1)
 
 class App:
 
