@@ -30,7 +30,7 @@ class App:
 		label.grid(row=3)
 		
 		label = Label(frame, text=FAC_S0, font=("Helvetica", 24))
-		label.grid(row=4)
+		label.grid(row=5)
 		
 		self.update_S0_reading()
 		self.update_S0_mod()
