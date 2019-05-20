@@ -2,6 +2,6 @@
 Name=Health
 Comment=NITROX TOOL
 Exec=/home/pi/Gas-Blending/HEALTH.py
-Icon=/home/user/youricon.gif
+Icon=/home/pi/Gas-Blending/divetools.png
 Terminal=true
 Type=Application

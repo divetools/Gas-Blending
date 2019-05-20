@@ -2,6 +2,6 @@
 Name=Tri-Mix Stick
 Comment=NITROX TOOL
 Exec=/home/pi/Gas-Blending/TRI-MIX.STICK.py
-Icon=/home/user/youricon.gif
+Icon=/home/pi/Gas-Blending/divetools.png
 Terminal=false
 Type=Application

@@ -2,6 +2,6 @@
 Name=Update
 Comment=Update TOOL
 Exec=/home/pi/Gas-Blending/UPDATE.sh
-Icon=/home/user/youricon.gif
+Icon=/home/pi/Gas-Blending/divetools.png
 Terminal=false
 Type=Application

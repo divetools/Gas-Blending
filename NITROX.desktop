@@ -2,6 +2,6 @@
 Name=NITROX
 Comment=NITROX TOOL
 Exec=/home/pi/Gas-Blending/NITROX.py
-Icon=/home/user/youricon.gif
+Icon=/home/pi/Gas-Blending/divetools.png
 Terminal=false
 Type=Application
