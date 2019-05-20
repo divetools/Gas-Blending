@@ -5,6 +5,8 @@ from Tkinter import *
 import Adafruit_ADS1x15
 import time
 adc = Adafruit_ADS1x15.ADS1115()
+
+global FAC_S0
 FAC_S0 = (adc.read_adc(0, gain=16) + adc.read_adc(0, gain=16) + adc.read_adc(0, gain=16) + adc.read_adc(0, gain=16) + adc.read_adc(0, gain=16)) / 5 / 20.9
 
 def get_O2_S0():
@@ -17,30 +19,30 @@ class App:
 		self.master = master
 		frame = Frame(master)
 		frame.pack()
+
+                label = Label(frame, text='Dive Tools', font=("Helvetica", 32))
+                label.grid(row=0)
+
 		label = Label(frame, text='NITROX ANALYZER', font=("Helvetica", 32))
-		label.grid(row=0)
+		label.grid(row=1)
 
 		self.S0_reading_label = Label(frame, text='12.34', font=("Helvetica", 64))
-		self.S0_reading_label.grid(row=1)
+		self.S0_reading_label.grid(row=2)
 
 		self.S0_mod_label = Label(frame, text='123', font=("Helvetica", 64))
-		self.S0_mod_label.grid(row=2)
+		self.S0_mod_label.grid(row=3)
 		
-		label = Label(frame, text="Dive Tools Nixtrox", font=("Helvetica", 32))
-		label.grid(row=3)
+                label = Label(frame, text="", font=("Helvetica", 32))
+                label.grid(row=4)
 		
-		label = Label(frame, text=FAC_S0, font=("Helvetica", 24))
-		label.grid(row=5)
+		self.fac_label = Label(frame, text=FAC_S0, font=("Helvetica", 24))
+		self.fac_label.grid(row=5,column=0)
 		
-		up_btn = tk.Button(frame, 
-                   text="+", ,
-                   command=FAC_S0 +1)
-               button.pack(side=tk.LEFT)
+		up_btn = Button(frame, text="+", command=self.fac_up)
+		up_btn.grid(row=5, column=1)
 	
-               down_btn = tk.Button(frame,
-                   text="-",
-                   command=FAC_S0 -1)
-               down_btn.pack(side=tk.LEFT)
+                down_btn = Button(frame, text="-", command=self.fac_down)
+                down_btn.grid(row=5, column=2)
 		
 		self.update_S0_reading()
 		self.update_S0_mod()
@@ -57,8 +59,18 @@ class App:
 		self.S0_mod_label.configure(text=mod_str)
 		self.master.after(500, self.update_S0_mod)
 
+        def fac_up(self):
+		global FAC_S0
+                FAC_S0 -= .3
+		self.fac_label.configure(text=FAC_S0, fg = "red")
+
+        def fac_down(self):
+		global FAC_S0
+                FAC_S0 += .3
+                self.fac_label.configure(text=FAC_S0, fg= "red")
+
 root = Tk()
-root.wm_title('ADC')
+root.wm_title('Dive Tools --- NITROX ANALYZER')
 app = App(root)
 root.geometry("800x450+0+0")
 root.mainloop()
