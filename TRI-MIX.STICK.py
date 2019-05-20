@@ -78,7 +78,7 @@ class App:
 
 
 root = Tk()
-root.wm_title('ADC')
+root.wm_title('Dive Tools --- Tri-Mix Stick')
 app = App(root)
 root.geometry("800x450+0+0")
 root.mainloop()
