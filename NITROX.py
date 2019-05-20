@@ -32,6 +32,16 @@ class App:
 		label = Label(frame, text=FAC_S0, font=("Helvetica", 24))
 		label.grid(row=5)
 		
+		up_btn = tk.Button(frame, 
+                   text="+", ,
+                   command=FAC_S0 +1)
+               button.pack(side=tk.LEFT)
+	
+               down_btn = tk.Button(frame,
+                   text="-",
+                   command=FAC_S0 -1)
+               down_btn.pack(side=tk.LEFT)
+		
 		self.update_S0_reading()
 		self.update_S0_mod()
 
