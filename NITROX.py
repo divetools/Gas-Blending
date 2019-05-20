@@ -28,6 +28,10 @@ class App:
 		
 		label = Label(frame, text="Dive Tools Nixtrox", font=("Helvetica", 32))
 		label.grid(row=3)
+		
+		label = Label(frame, text=FAC_S0, font=("Helvetica", 24))
+		label.grid(row=4)
+		
 		self.update_S0_reading()
 		self.update_S0_mod()
 
