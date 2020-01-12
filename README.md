@@ -64,8 +64,8 @@
 <td><a href="https://www.amazon.com/gp/product/B07BDBTRCD/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&amp;psc=1" target="_blank" rel="noopener">Amazon</a></td>
 </tr>
 <tr>
-<td>Total:</td>
-<td>$191.00</td>
+<td><strong>Total:</strong></td>
+<td><strong>$191.00</strong></td>
 </tr>
 </tbody>
 </table>
