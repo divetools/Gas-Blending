@@ -67,4 +67,3 @@
 </tr>
 </tbody>
 </table>
-<p>If you need an idea for a Christmas present then think about <a href="https://rubiks-cu.be/">the Rubik's Cube</a> which is the best selling puzzle toy in the World.</p>
