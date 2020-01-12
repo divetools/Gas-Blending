@@ -6,7 +6,7 @@
 <li>apt-get install python-tk</li>
 </ul>
 <p>Wire up an Adafruit ADS1115 to the pi I2C GPIOs. Connect two O2 sensors to port 0 and 1 on the ADS.</p>
-<h2>Components:</h2>
+<h2>Hardware Components:</h2>
 <table border="0" cellspacing="0" cellpadding="0"><colgroup><col width="292" /><col width="100" /><col width="87" /><col width="2047" /></colgroup>
 <tbody>
 <tr>
