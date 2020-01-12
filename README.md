@@ -48,6 +48,8 @@
 <tr>
 <td height="21">Micro SD Flash Drive</td>
 <td>1</td>
+<td>$13.89</td>
+<td><a href="https://www.amazon.com/SanDisk-Extreme-microSDHC-UHS-I-SDSQXBG-032G-GN6MA/dp/B06XYDY93V/ref=pd_ybh_a_7?_encoding=UTF8&amp;psc=1&amp;refRID=19C291F42HYZ9ECZGNY7" target="_blank" rel="noopener">Amazon</a></td>
 </tr>
 <tr>
 <td height="21">Raspberry Pi Official 7 Inch Touch Screen</td>
@@ -63,7 +65,8 @@
 </tr>
 <tr>
 <td>Total:</td>
-<td>$177.11</td>
+<td>$191.00</td>
 </tr>
 </tbody>
 </table>
+<p>&nbsp;</p>
