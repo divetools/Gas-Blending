@@ -13,7 +13,7 @@ while True:
    S1 = round(adc(0, gain=16) * 0.00781274,1)
    S2 = round(adc(1, gain=16) * 0.00781274,1)
    os.system('clear')
-   print " ", "S1:", O2_S1,'%', "     S2:", O2_S1
+   print " ", "S1:", O2_S1,'%', "     S2:", O2_S2
    print " "
    print " ", "S1:", S1,"mV"
    print " "
