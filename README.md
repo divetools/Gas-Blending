@@ -1,5 +1,8 @@
-<h1>Welcome to DiveTools and Gas Blending</h1>
-<h2><strong> To Install this tool: </strong></h2>
+<h1 style="text-align: center;">Welcome to DiveTools and Gas Blending</h1>
+<p style="text-align: center;"><span style="color: #ff0000;"><strong>This tool is for testing and educational use. &nbsp;</strong></span></p>
+<p style="text-align: center;"><span style="color: #ff0000;">It is not intended to confirm the mix of breathing gases. &nbsp;If this tool is used a separate test is needed with an appropriate and calibrated and tested O2 and He sensor.</span></p>
+<p>This tool will provide information for mixing Air, O2, and He with a SCUBA compressor. &nbsp;The intended use is to have two O2 sensors that are able to calculate a mix before it goes into a compressor. &nbsp;Two "Nitrox" sticks are used in series. &nbsp;One to mix in He and one to mix in O2.</p>
+<h2><strong>To Install this tool: </strong></h2>
 <ul>
 <li>Install latest Raspberry Pi Debian OS with desktop.</li>
 <li>pip install Adafruit_ADS1x15</li>
