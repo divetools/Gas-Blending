@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-from Tkinter import *
+from tkinter import *
 import Adafruit_ADS1x15
 import time
 
