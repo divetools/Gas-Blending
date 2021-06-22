@@ -1,7 +1,7 @@
 <h1 style="text-align: center;">Welcome to DiveTools Gas Blending</h1>
 <p style="text-align: center;"><span style="color: #ff0000;"><strong>This tool is for testing and educational use. &nbsp;</strong></span></p>
 <p style="text-align: center;"><span style="color: #ff0000;">It is not intended to confirm the mix of breathing gases. &nbsp;If this tool is used a separate test is needed with an appropriate and calibrated and tested O2 and He sensor.</span></p>
-<p>This tool will provide information for mixing Air, O2, and He with a SCUBA compressor. &nbsp;The intended use is to have two O2 sensors that are able to calculate a mix before it goes into a compressor. &nbsp;Two "Nitrox" sticks are used in series. &nbsp;One to mix in He and one to mix in O2.</p>
+<p>This tool will provide information for mixing Air, O2, and He with a SCUBA compressor. &nbsp;The intended use is to have two O2 sensors that are able to calculate a mix before it goes into a compressor. &nbsp;Two "Nitrox" sticks are used in series. &nbsp;One to mix in He and one to mix in O2.&nbsp; The tool can also be used as a nitrox analyser.</p>
 <h2><strong>To Install this tool: </strong></h2>
 <ul>
 <li>Install latest Raspberry Pi OS with desktop.</li>
@@ -10,6 +10,7 @@
 </ul>
 <p>Wire up an Adafruit ADS1115 to the pi I2C GPIOs. Connect two O2 sensors to port 0 and 1 on the ADS.</p>
 <h2>Hardware Components:</h2>
+<p>2021 Update - In an effort to reduce cost, I designed a new hardware case for the project.&nbsp; This case is 3D printed and will reduce the cost of the project.&nbsp; The STL's can be found at&nbsp;<a href="https://www.thingiverse.com/">https://www.thingiverse.com/</a>&nbsp;for download and printing.</p>
 <table border="0" cellspacing="0" cellpadding="0"><colgroup><col width="292" /><col width="100" /><col width="87" /><col width="2047" /></colgroup>
 <tbody>
 <tr>
@@ -23,18 +24,6 @@
 <td>1</td>
 <td>$55.96</td>
 <td><a href="https://www.amazon.com/ELEMENT-Element14-Raspberry-Pi-Motherboard/dp/B07P4LSDYV/ref=sr_1_2_sspa?crid=2VBVS2OLMLLSQ&amp;keywords=raspberry+pi+3b%2B&amp;qid=1578837606&amp;sprefix=%2Caps%2C139&amp;sr=8-2-spons&amp;psc=1&amp;spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzOEpGNlEwRkVFT0dCJmVuY3J5cHRlZElkPUEwMTAwMzcxMkdFUVY3WEI4VFg4VCZlbmNyeXB0ZWRBZElkPUEwMDUxNzg2MVdRNUZaUkpYSEJOMSZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=" target="_blank" rel="noopener">Amazon</a></td>
-</tr>
-<tr>
-<td height="21">SmartiPi Touch 1 - Case</td>
-<td>1</td>
-<td>$24.99</td>
-<td><a href="https://www.amazon.com/gp/product/B01HV97F64/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&amp;psc=1" target="_blank" rel="noopener">Amazon</a></td>
-</tr>
-<tr>
-<td height="21">SmartiPi Touch 1 Back Cover - 15mm deep</td>
-<td>1</td>
-<td>$5.99</td>
-<td><a href="https://www.amazon.com/SmartiPi-Touch-back-HAT-cover/dp/B071J7SLM8/ref=sr_1_4?keywords=SmartiPi+Touch+1&amp;qid=1578837743&amp;s=electronics&amp;sr=1-4" target="_blank" rel="noopener">Amazon</a></td>
 </tr>
 <tr>
 <td height="21">Raspberry Pi 3 Power Supply 5V 2.5A</td>
@@ -68,7 +57,7 @@
 </tr>
 <tr>
 <td><strong>Total:</strong></td>
-<td><strong>$191.00</strong></td>
+<td><strong>$160.02</strong></td>
 </tr>
 </tbody>
 </table>
