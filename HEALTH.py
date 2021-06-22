@@ -15,13 +15,13 @@ while True:
    S3 = round(adc(2, gain=16) * 0.00781274,1)
    S4 = round(adc(3, gain=16) * 0.00781274,1)
    os.system('clear')
-   print " ", "S1:", O2_S1,'%', "     S2:", O2_S2
-   print " "
-   print " ", "S1:", S1,"mV"
-   print " "
-   print " ", "S2:", S2,"mV"
-   print " "
-   print " ", "S3:", S3,"mV"
-   print " "
-   print " ", "S4:", S4,"mV"
+   print(" ", "S1:", O2_S1,'%', "     S2:", O2_S2)
+   print(" ")
+   print(" ", "S1:", S1,"mV")
+   print(" ")
+   print(" ", "S2:", S2,"mV")
+   print(" ")
+   print(" ", "S3:", S3,"mV")
+   print(" ")
+   print(" ", "S4:", S4,"mV")
    time.sleep(0.5)
