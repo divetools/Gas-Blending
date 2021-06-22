@@ -4,7 +4,7 @@
 <p>This tool will provide information for mixing Air, O2, and He with a SCUBA compressor. &nbsp;The intended use is to have two O2 sensors that are able to calculate a mix before it goes into a compressor. &nbsp;Two "Nitrox" sticks are used in series. &nbsp;One to mix in He and one to mix in O2.&nbsp; The tool can also be used as a nitrox analyser.</p>
 <h2><strong>To Install this tool: </strong></h2>
 <ul>
-<li>Install latest Raspberry Pi OS with desktop.</li>
+<li>Install latest Raspberry Pi OS with desktop.(2021-05-07-raspios-buster-armhf.img Tested)</li>
 <li>Under Raspberry Pi Configuration --> Interfaces --> Enable "I2C"</li>
 <li>pip install Adafruit_ADS1x15</li>
 <li>apt-get install python3-tk</li>
