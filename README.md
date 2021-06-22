@@ -10,6 +10,9 @@
 <li>apt-get install python-tk</li>
 <li>git clone git://github.com/divetools/Gas-Blending.git </li>
 <li>ln -s ~/Gas-Blending/HEALTH.desktop ~/Desktop/HEALTH.desktop</li>
+<p>Open File Manager
+Select Edit - Preferences - General
+  Tick the option "Don't ask options on launch executable file"</p>
 <p>Wire up an Adafruit ADS1115 to the pi I2C GPIOs. Connect two O2 sensors to port 0 and 1 on the ADS.</p>
 <h2>Hardware Components:</h2>
 <p>2021 Update - In an effort to reduce cost, I designed a new hardware case for the project.&nbsp; This case is 3D printed and will reduce the cost of the project.&nbsp; The STL's can be found at&nbsp;<a href="https://www.thingiverse.com/">https://www.thingiverse.com/</a>&nbsp;for download and printing.</p>
