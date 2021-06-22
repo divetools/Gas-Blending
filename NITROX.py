@@ -21,8 +21,8 @@ class App:
 		frame = Frame(master)
 		frame.pack()
 
-                label = Label(frame, text='Dive Tools', font=("Helvetica", 32))
-                label.grid(row=0)
+                label = Label(frame, text = 'Dive Tools', font = ("Helvetica", 32))
+                label.grid(row = 0)
 
 		label = Label(frame, text='NITROX ANALYZER', font=("Helvetica", 32))
 		label.grid(row=1)
