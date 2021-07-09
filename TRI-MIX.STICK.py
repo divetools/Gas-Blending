@@ -2,20 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from tkinter import *
-import Adafruit_ADS1x15
-import time
-adc = Adafruit_ADS1x15.ADS1115().read_adc
-
-FAC_S0 = (adc(0, gain=16) + adc(0, gain=16) + adc(0, gain=16) + adc(0, gain=16) + adc(0, gain=16)) / 5 / 20.9
-FAC_S1 = (adc(1, gain=16) + adc(1, gain=16) + adc(1, gain=16) + adc(1, gain=16) + adc(1, gain=16)) / 5 / 20.9
-
-def get_O2_S0():
-        O2_S0 = round((adc(0, gain=16) + adc(0, gain=16) + adc(0, gain=16) + adc(0, gain=16) + adc(0, gain=16)) / 5 / FAC_S0,1)
-        return (O2_S0)
-
-def get_O2_S1():
-        O2_S1 = round((adc(1, gain=16) + adc(1, gain=16) + adc(1, gain=16) + adc(1, gain=16) + adc(1, gain=16)) / 5 / FAC_S1,1)
-        return (O2_S1)
+from O2SENSOR import *
 
 class App:
 
@@ -51,21 +38,20 @@ class App:
 
 
         def update_S0_reading(self):
-
                 O2_S0 = get_O2_S0()
-                reading_str = "S1: {:.2f}% O²".format(O2_S0)
+                reading_str = "S0: {:.2f}% O²".format(O2_S0)
                 self.S0_reading_label.configure(text=reading_str)
                 self.master.after(500, self.update_S0_reading)
 
         def update_S1_reading(self):
                 O2_S1 = get_O2_S1()
-                reading_str = "S2: {:.2f}% O²".format(O2_S1)
+                reading_str = "S1: {:.2f}% O²".format(O2_S1)
                 self.S1_reading_label.configure(text=reading_str)
                 self.master.after(500, self.update_S1_reading)
 
         def update_mix_c1(self):
                 MIX_C1 = get_O2_S1()
-                mix_c1_str = "{}% O² /".format(MIX_C1)
+                mix_c1_str = "{:.2f}% O² /".format(MIX_C1)
                 self.mix_c1_label.configure(text=mix_c1_str)
                 self.master.after(500, self.update_mix_c1)
 
@@ -73,8 +59,8 @@ class App:
                 O2_S0 = get_O2_S0()
                 O2_S1 = get_O2_S1()
                 MIX_CALC = (100-O2_S1)/(100-O2_S0)+O2_S0*(O2_S1-100)/(20.8*(100-O2_S0))
-                MIX_C2 = round(MIX_CALC*100) 
-                mix_c2_str = " {}% He".format(MIX_C2)
+                MIX_C2 = MIX_CALC*100 
+                mix_c2_str = " {:.2f}% He".format(MIX_C2)
                 self.mix_c2_label.configure(text=mix_c2_str)
                 self.master.after(500, self.update_mix_c2)
 
