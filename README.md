@@ -13,7 +13,7 @@
 <li>Open File Manager --> Select Edit --> Preferences --> General Tick the option "Don't ask options on launch executable file"</li>
 <p>Wire up an Adafruit ADS1115 to the pi I2C GPIOs. Connect two O2 sensors to port 0 and 1 on the ADS.</p>
 <h2>Hardware Components:</h2>
-<p>2021 Update - In an effort to reduce cost, I designed a new hardware case for the project.&nbsp; This case is 3D printed and will reduce the cost of the project.&nbsp; The STL's can be found at&nbsp;<a href="https://www.thingiverse.com/">https://www.thingiverse.com/</a>&nbsp;for download and printing.</p>
+<p>2021 Update - In an effort to reduce cost, I designed a new hardware case for the project.&nbsp; This case is 3D printed and will reduce the cost of the project.&nbsp; The STL's can be found at&nbsp;<a href="https://www.thingiverse.com/thing:4892104">https://www.thingiverse.com/thing:4892104</a>&nbsp;for download and printing.</p>
 <table border="0" cellspacing="0" cellpadding="0"><colgroup><col width="292" /><col width="100" /><col width="87" /><col width="2047" /></colgroup>
 <tbody>
 <tr>
