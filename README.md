@@ -7,7 +7,7 @@
 <li>Install latest Raspberry Pi OS with desktop.(2021-05-07-raspios-buster-armhf.img Tested)</li>
 <li>Under Raspberry Pi Configuration --> Interfaces --> Enable "I2C"</li>
 <li>pip install Adafruit_ADS1x15</li>
-<li>apt-get install python3-tk</li>
+<li>sudo apt-get install python3-tk</li>
 <li>git clone git://github.com/divetools/Gas-Blending.git </li>
 <li>ln -s ~/Gas-Blending/HEALTH.desktop ~/Desktop/HEALTH.desktop</li>
 <li>Open File Manager --> Select Edit --> Preferences --> General Tick the option "Don't ask options on launch executable file"</li>
